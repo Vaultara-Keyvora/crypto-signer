@@ -1,0 +1,5 @@
+logs/*
+strix_runs/*
+bin/*
+# real signer config (contains secrets); use config/signer.example.yaml
+config/signer.yaml

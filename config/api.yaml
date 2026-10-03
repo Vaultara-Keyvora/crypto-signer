@@ -1,0 +1,11 @@
+api:
+  # Listening IP; 0.0.0.0 means both internal and external IPs are listened to, default is recommended
+  listenIP: 127.0.0.1
+  # Listening ports; if multiple are configured, multiple instances will be launched, must be consistent with the number of prometheus.ports
+  ports: 10013
+  # Swagger for api doc
+  swagger: false
+  # Trusted proxy server IP(e.g., the private subnet where Nginx resides)
+  # During deployment, the reverse proxy (e.g., Nginx) must be configured with `proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for`
+  trustedProxy: ["127.0.0.1"]
+chain: ["tron"]

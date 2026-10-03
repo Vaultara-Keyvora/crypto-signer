@@ -1,0 +1,10 @@
+# Example signer config. Copy to config/signer.yaml (git-ignored) or generate it with:
+#   ./server init -c ./config --account <YOUR_ETH_ADDRESS> --merchant-id <YOUR_MERCHANT_ID> \
+#     --merchant-url https://<YOUR_MERCHANT_API_HOST>/api/ --signer-url http://<YOUR_SIGNER_HOST>:<PORT> \
+#     --secret-key <YOUR_SECRET_KEY>
+# secretKey must be at least 32 characters. Never commit real values.
+ethereumAccount: "<YOUR_ETH_ADDRESS>"
+merchantId: "<YOUR_MERCHANT_ID>"
+merchantUrl: "https://<YOUR_MERCHANT_API_HOST>/api/"
+signerUrl: "http://<YOUR_SIGNER_HOST>:<PORT>"
+secretKey: "<YOUR_SECRET_KEY>"
